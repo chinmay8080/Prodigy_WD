@@ -1,0 +1,73 @@
+/* General Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #282c34;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #61dafb;
+}
+
+.game {
+    text-align: center;
+    background: #1c2025;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-gap: 15px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 120px;
+    height: 120px;
+    background-color: #61dafb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    color: #282c34;
+}
+
+.cell:hover {
+    background-color: #4eb7de;
+    transform: scale(1.1);
+}
+
+.info {
+    margin-top: 20px;
+}
+
+#message {
+    font-size: 1.7em;
+    margin-bottom: 10px;
+}
+
+#restartButton {
+    margin-top: 15px;
+    padding: 10px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #61dafb;
+    color: #282c34;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#restartButton:hover {
+    background-color: #4eb7de;
+    transform: scale(1.05);
+}

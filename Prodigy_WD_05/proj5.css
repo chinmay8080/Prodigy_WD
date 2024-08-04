@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #eef2f3 0%, #8e9eab 100%);
+    color: #333;
+    height: 100vh;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0077cc;
+}
+
+input, button {
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 2px solid #0077cc;
+    border-radius: 8px;
+    width: 100%;
+    background: #f9f9f9;
+    color: #333;
+}
+
+button {
+    background: #0077cc;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: #005fa3;
+    transform: scale(1.05);
+}
+
+#locationName {
+    font-weight: bold;
+    margin-top: 20px;
+    display: none;
+    color: #0077cc;
+    font-size: 1.5rem;
+}
+
+#weatherDetails {
+    background-color: #f0f4f8;
+    padding: 20px;
+    width: 100%;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: none;
+    border: 1px solid #ddd;
+}
+
+.weather-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #e0e7ef;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.weather-item:hover {
+    transform: translateY(-5px);
+}
+
+.weather-item i {
+    font-size: 30px;
+    color: #0077cc;
+    margin-bottom: 8px;
+}
+
+.weather-item p {
+    text-align: center;
+    margin: 0;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.weather-item span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}

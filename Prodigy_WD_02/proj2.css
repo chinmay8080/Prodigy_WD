@@ -1,0 +1,82 @@
+/* General Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #ff5f6d, #ffc371);
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.stopwatch {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 500px;
+}
+
+#display {
+    font-size: 4em;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffdd57;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.controls button {
+    font-size: 1.2em;
+    padding: 15px 25px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background: #333;
+    color: #ffdd57;
+    transition: background 0.3s ease, color 0.3s ease;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.controls button:hover {
+    background: #ffdd57;
+    color: #333;
+}
+
+#laps {
+    margin-top: 20px;
+    text-align: left;
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 10px;
+    scrollbar-width: thin;
+}
+
+#laps div {
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 1em;
+}
+
+#laps div:last-child {
+    border-bottom: none;
+}
+
+/* Scrollbar Styling for #laps */
+#laps::-webkit-scrollbar {
+    width: 8px;
+}
+
+#laps::-webkit-scrollbar-thumb {
+    background: #ffdd57;
+    border-radius: 4px;
+}
